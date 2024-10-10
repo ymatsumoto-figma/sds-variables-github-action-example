@@ -39,7 +39,7 @@
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Gray.100}",
+        "$value": "{Gray.700}",
         "$description": "Bg/Default/Secondary",
         "$extensions": {
           "com.figma": {
