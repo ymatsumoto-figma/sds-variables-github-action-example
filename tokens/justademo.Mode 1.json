@@ -1,7 +1,7 @@
 {
   "brand": {
     "$type": "color",
-    "$value": "#d01717",
+    "$value": "#000000",
     "$description": "",
     "$extensions": {
       "com.figma": {
