@@ -242,11 +242,12 @@ export function generatePostVariablesPayload(
   } = {}
 
   Object.values(localVariables.meta.variableCollections).forEach((collection) => {
-    if (localVariableCollectionsByName[collection.name]) {
-      throw new Error(`Duplicate variable collection in file: ${collection.name}`)
-    }
-
+    if (!collection.remote) {
+      if (localVariableCollectionsByName[collection.name]) {
+        console.log(`Duplicate variable collection in file: ${collection.name}`)
+      }
     localVariableCollectionsByName[collection.name] = collection
+    }
   })
 
   Object.values(localVariables.meta.variables).forEach((variable) => {
