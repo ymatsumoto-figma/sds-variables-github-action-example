@@ -1,7 +1,7 @@
 {
   "brand-logo": {
     "$type": "color",
-    "$value": "#006a4d",
+    "$value": "#000000",
     "$description": "",
     "$extensions": {
       "com.figma": {
